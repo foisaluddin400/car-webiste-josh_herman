@@ -17,7 +17,7 @@ export default function ClientLayout({ children }) {
     pathname === "/signUp/done" ||
     pathname === "/signUp/seller" ||
     pathname === "/signUp/accountverify";
-
+//f
   return (
     <>
       <div className="flex flex-col min-h-screen">
