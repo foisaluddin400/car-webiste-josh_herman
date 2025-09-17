@@ -1,4 +1,4 @@
-'use client';
+"use client";
 import React, { useState } from "react";
 import { Search, ShoppingCart, User, ChevronDown, Menu } from "lucide-react";
 import Link from "next/link";
@@ -16,27 +16,28 @@ export const Navbar = () => {
 
   const navItems = [
     { label: "Home", path: "/", isHighlighted: true },
-    {
-      label: "Service",
-      path: "/allProduct",
-      children: [
-        {
-          label: "Custom Apparel",
-          path: "/allProduct",
-          children: [
-            { label: "T-Shirts", path: "/allProduct" },
-            { label: "Hoodies", path: "/allProduct" },
-          ],
-        },
-        { label: "Accessories & Gifts", path: "/allProduct" },
-        { label: "Prints & Labels", path: "/allProduct" },
-      ],
-    },
-    { label: "Individual Product", path: "/individual_product" },
-    { label: "Order", path: "/allProduct", badge: 2 },
-    { label: "About", path: "/about" },
-    { label: "Contact", path: "/contactUs" },
-    { label: "Blog", path: "/blog" },
+    // {
+    //   label: "Service",
+    //   path: "/allProduct",
+    //   children: [
+    //     {
+    //       label: "Custom Apparel",
+    //       path: "/allProduct",
+    //       children: [
+    //         { label: "T-Shirts", path: "/allProduct" },
+    //         { label: "Hoodies", path: "/allProduct" },
+    //       ],
+    //     },
+    //     { label: "Accessories & Gifts", path: "/allProduct" },
+    //     { label: "Prints & Labels", path: "/allProduct" },
+    //   ],
+    // },
+    { label: "Royal Exotic", path: "/royalExotic" },
+    { label: "ROYAL Yachts", path: "/rOYALYachts"},
+    { label: "ROYAL Mansions", path: "/rOYALMansions" },
+     { label: "ROYAL Jet plane ", path: "/rOYALJetplane " },
+    { label: "Contact", path: "/contact" },
+    // { label: "Blog", path: "/blog" },
   ];
 
   // Recursive Drawer Item
@@ -54,7 +55,9 @@ export const Navbar = () => {
           <Link
             href={item.path}
             className={`flex-1 ${
-              pathname === item.path ? "font-medium text-yellow-400" : "text-white"
+              pathname === item.path
+                ? "font-medium text-yellow-400"
+                : "text-white"
             }`}
           >
             {item.label}
@@ -132,8 +135,8 @@ export const Navbar = () => {
 
       {/* Main Header */}
       <div className="bg-white border-b">
-        <div className="bg-primary px-4 lg:px-0">
-          <div className="container mx-auto py-4 flex items-center justify-between gap-4">
+        <div className="bg-[#0F1010] px-4 lg:px-0">
+          <div className="container mx-auto py-2 flex items-center justify-between gap-4">
             {/* Logo & Hamburger */}
             <div className="flex items-center gap-3">
               <button
@@ -145,39 +148,28 @@ export const Navbar = () => {
               <Link href="/" className="text-2xl font-bold">
                 <Image
                   alt="logo"
-                  src="/img/logo.png"
-                  height={60}
-                  width={100}
+                  src="/img/logo4.png"
+                  height={40}
+                  width={500}
                   priority
+                  className="w-[50px]"
                 />
               </Link>
             </div>
 
             {/* Search (Desktop) */}
-            <div className="hidden md:flex flex-1 max-w-2xl mx-8">
-              <div className="relative w-full">
-                <input
-                  type="text"
-                  placeholder="Search for anything..."
-                  className="w-full pl-4 pr-12 py-2 border border-gray-300 focus:ring-2 focus:ring-red-500 focus:border-transparent rounded-md"
-                />
-                <button className="absolute right-2 top-2">
-                  <Search className="w-5 h-5 text-gray-600" />
-                </button>
-              </div>
-            </div>
 
             {/* Auth + Cart */}
             <div className="flex items-center gap-3">
               <Link
-                href="/auth/signUp"
+                href="/signUp"
                 className="hidden md:block border text-white px-4 py-2 rounded-md"
               >
                 Sign Up
               </Link>
               <Link
-                href="/auth/login"
-                className="hidden md:block bg-gradient-to-r from-indigo-200 via-blue-400 to-blue-700 text-white px-4 py-2 rounded-md"
+                href="/signIn"
+                className="hidden md:block bg-primary text-white px-4 py-2 rounded-md"
               >
                 Log In
               </Link>
@@ -192,7 +184,7 @@ export const Navbar = () => {
                     </span>
                   </div>
                 </Link>
-                <Link href="/profilePage">
+                <Link href="/profile">
                   <User className="w-6 h-6 text-white cursor-pointer" />
                 </Link>
               </div>
@@ -202,8 +194,9 @@ export const Navbar = () => {
 
         {/* Desktop Nav */}
         <div className="hidden md:block">
-          <div className="container mx-auto">
-            <nav className="flex items-center justify-between py-3 relative">
+        <div className="bg-neutral white">
+            <div className="container mx-auto ">
+            <nav className="flex items-center justify-between py-3 relative ">
               <div className="flex items-center space-x-8">
                 {navItems.map((item, idx) => (
                   <div
@@ -217,7 +210,7 @@ export const Navbar = () => {
                       className={`flex items-center gap-1 px-2 py-1 rounded ${
                         pathname === item.path || isPathActive(item)
                           ? "bg-secondary text-black font-medium"
-                          : "text-gray-600 hover:text-gray-900"
+                          : "text-white "
                       }`}
                     >
                       {item.label}
@@ -237,20 +230,16 @@ export const Navbar = () => {
               <div className="hidden lg:block">
                 <div className="flex gap-3">
                   <Link href="/cart">
-                    <div className="relative cursor-pointer">
-                      <ShoppingCart className="w-6 h-6 text-black" />
-                      <span className="absolute -top-2 -right-2 bg-red-500 text-white text-xs min-w-[20px] h-5 flex items-center justify-center rounded-full">
-                        5
-                      </span>
-                    </div>
+                    <button className="bg-primary text-black px-3 rounded py-1">Join PRM</button>
                   </Link>
-                  <Link href="/profilePage">
-                    <User className="w-6 h-6 text-black cursor-pointer" />
+                  <Link href="/profile">
+                    <User className="w-6 h-6 text-primary cursor-pointer" />
                   </Link>
                 </div>
               </div>
             </nav>
           </div>
+        </div>
         </div>
       </div>
 
@@ -295,15 +284,15 @@ export const Navbar = () => {
         {/* Auth Buttons */}
         <div className="mt-6 flex gap-3">
           <Link
-            href="/auth/signUp"
+            href="/signUp"
             className="border px-4 py-2 rounded-md text-white flex-1 text-center"
             onClick={() => setDrawerOpen(false)}
           >
             Sign Up
           </Link>
           <Link
-            href="/auth/login"
-            className="bg-gradient-to-r from-indigo-200 via-blue-400 to-blue-700 text-white px-4 py-2 rounded-md flex-1 text-center"
+            href="/signIn"
+            className="bg-primary text-white px-4 py-2 rounded-md flex-1 text-center"
             onClick={() => setDrawerOpen(false)}
           >
             Log In

@@ -14,8 +14,8 @@ const geistMono = localFont({
 });
 
 export const metadata = {
-  title: "JusBuy Website",
-  description: "E-commerce",
+  title: "RPM Royality",
+  description: "RPM Royality",
 };
 
 export default function RootLayout({ children }) {
