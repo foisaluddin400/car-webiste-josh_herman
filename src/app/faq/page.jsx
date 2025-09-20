@@ -3,6 +3,7 @@ import SharedBannar from '@/components/shared/SharedBannar'
 import React from 'react'
 
 const page = () => {
+  //d
   return (
     <div>
         <SharedBannar    title="FAQ"
