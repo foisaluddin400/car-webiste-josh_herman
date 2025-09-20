@@ -38,10 +38,9 @@ export default function Home() {
 
             <p className="pt-8 text-gray-300">
               Discover the best hotels, resorts, and vacation rentals worldwide.
-              Whether you're planning a weekend getaway or a long vacation, we
-              offer a seamless booking experience with great prices, flexible
-              options, and instant confirmations. Start your adventure now and
-              make unforgettable memories!"
+              Discover the best hotels, resorts, and vacation rentals worldwide.
+              Discover the best hotels, resorts, and vacation rentals worldwide.
+            
             </p>
             <button className="bg-gradient-to-r from-stone-400  to-orange-600 px-3 py-2 rounded border mt-9">
               Explore Now

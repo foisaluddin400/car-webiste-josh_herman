@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import { Avatar, Upload, Form, Input, Button, message } from "antd";
 import { IoCameraOutline } from "react-icons/io5";
 import { PasswordTab } from "./PasswordTab";
+import Image from "next/image";
 
 
 const ProfileForm = () => {
@@ -102,11 +103,14 @@ const ProfileForm = () => {
                 id="img"
                 style={{ display: "none" }}
               />
-              <img
-                style={{ width: 140, height: 140, borderRadius: "100%" }}
-                src={`${image ? URL.createObjectURL(image) : `ddd`}`}
-                alt="Admin Profile"
-              />
+            <Image
+  width={400}
+  height={400}
+  style={{ width: 140, height: 140, borderRadius: "100%" }}
+  src={image ? URL.createObjectURL(image) : "/default-avatar.png"}
+  alt="Admin Profile"
+/>
+
               {activeTab === "1" && (
                 <label
                   htmlFor="img"
