@@ -1,6 +1,7 @@
 import React from "react";
 import { Facebook, Twitter, Instagram, Linkedin } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
 
 // Button Component
 const Button = ({ children, className, ...props }) => (
@@ -26,19 +27,18 @@ export const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
           {/* Exclusive Section */}
           <div className="lg:col-span-1">
+             <Image
+                              alt="logo"
+                              src="/img/logo4.png"
+                              height={40}
+                              width={500}
+                              priority
+                              className="w-[50px]"
+                            />
             <h3 className="text-xl font-semibold mb-4">Exclusive</h3>
             <h4 className="text-lg font-medium mb-3">Subscribe</h4>
             <p className="text-gray-300 mb-4">Get 10% off your first order</p>
-            <div className="flex">
-              <Input
-                type="email"
-                placeholder="Enter your email"
-                className="bg-transparent border-gray-600 text-white placeholder:text-gray-400 rounded-r-none"
-              />
-              <Button className="bg-transparent border border-gray-600 border-l-0 rounded-l-none hover:bg-gray-700">
-                →
-              </Button>
-            </div>
+            
           </div>
 
           {/* Support Section */}
