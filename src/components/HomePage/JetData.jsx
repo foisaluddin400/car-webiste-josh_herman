@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import img1 from "../../../public/img/pri.jpg";
+import img1 from "../../../public/img/pri.png";
 import Link from "next/link";
 
 export default function JetData() {

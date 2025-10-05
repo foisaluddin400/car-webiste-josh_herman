@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import img1 from "../../../public/img/exo.jpg";
+import img1 from "../../../public/img/exo.png";
 import Link from "next/link";
 
 export default function DataCardPage() {
