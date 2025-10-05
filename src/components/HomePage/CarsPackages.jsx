@@ -5,6 +5,7 @@ import { Users } from "lucide-react";
 import b1 from "../../../public/img/b1.jpg";
 import b2 from "../../../public/img/b2.jpg";
 import b3 from "../../../public/img/b3.jpg";
+import Link from "next/link";
 
 const cars = [
   {
@@ -88,13 +89,14 @@ const CarsPackages = () => {
             >
               {/* Car Image */}
               <div className="relative w-full h-64">
+                <Link href={'/royalExotic'}>
                 <Image
                   src={car.image}
                   alt={car.name}
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-300"
                   sizes="(max-width: 768px) 100vw, 25vw"
-                />
+                /></Link>
               </div>
 
               {/* Content Overlay */}
