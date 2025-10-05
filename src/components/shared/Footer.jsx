@@ -22,23 +22,23 @@ const Input = ({ className, ...props }) => (
 );
 export const Footer = () => {
   return (
- <footer className="bg-[#0F1010] text-white py-12 mt-20">
+    <footer className="bg-[#0F1010] text-white py-12 mt-20">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
           {/* Exclusive Section */}
           <div className="lg:col-span-1">
-             <Image
-                              alt="logo"
-                              src="/img/logo4.png"
-                              height={40}
-                              width={500}
-                              priority
-                              className="w-[50px]"
-                            />
+            <Image
+              alt="logo"
+              src="/img/logo4.png"
+              height={40}
+              width={500}
+              priority
+              className="w-[50px]"
+            />
             <h3 className="text-xl font-semibold mb-4">Exclusive</h3>
             <h4 className="text-lg font-medium mb-3">Subscribe</h4>
             <p className="text-gray-300 mb-4">Get 10% off your first order</p>
-            
+
           </div>
 
           {/* Support Section */}
@@ -48,7 +48,7 @@ export const Footer = () => {
               <p>111 Mohakhali, Dhaka,</p>
               <p>DH 1515, Bangladesh.</p>
               <p>bdcalling@gmail.com</p>
-              <p>+88015-88888-9999</p>
+              <p>+88015-88888-999</p>
             </div>
           </div>
 
@@ -62,7 +62,7 @@ export const Footer = () => {
               <a href="/signIn" className="block text-gray-300 hover:text-white transition-colors">
                 Login / Register
               </a>
-             
+
             </div>
           </div>
 
