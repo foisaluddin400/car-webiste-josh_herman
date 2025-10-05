@@ -66,7 +66,7 @@ export const Footer = () => {
             </div>
           </div>
 
-          {/* Quick Link Section */}
+          {/* Quick Linkd Section */}
           <div className="lg:col-span-1">
             <h3 className="text-xl font-semibold mb-4">Quick Link</h3>
             <div className="space-y-2">
