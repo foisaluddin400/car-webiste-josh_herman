@@ -1,4 +1,5 @@
 import DataCardPage from "@/components/HomePage/DataCard";
+import RoyelMension from "@/components/HomePage/RoyelMension";
 import SharedBannar from "@/components/shared/SharedBannar";
 import React from "react";
 
@@ -12,7 +13,7 @@ const page = () => {
       ></SharedBannar>
 
       <div className="pt-11 pb-20">
-        <DataCardPage></DataCardPage>
+        <RoyelMension></RoyelMension>
       </div>
     </div>
   );

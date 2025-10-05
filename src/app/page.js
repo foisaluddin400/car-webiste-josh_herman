@@ -1,6 +1,10 @@
 import Image from "next/image";
 import back from "/public/img/hero1.jpg";
 import logo1 from "/public/img/l1.png";
+import logo2 from "/public/img/air.png";
+import logo3 from "/public/img/urk.png";
+import logo4 from "/public/img/swi.png";
+import logo5 from "/public/img/tri.png";
 import car1 from "/public/img/car1.png";
 import plan1 from "/public/img/plan1.png";
 import car2 from "/public/img/car2.png";
@@ -9,6 +13,7 @@ import PrivateJetsPage from "@/components/HomePage/HomePage";
 import CarsPackages from "@/components/HomePage/CarsPackages";
 import YachtsPack from "@/components/HomePage/YachtsPack";
 import DataCard from "@/components/HomePage/DataCard";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -54,13 +59,13 @@ export default function Home() {
         <div className="flex gap-11 justify-center">
           <Image src={logo1} alt="Hero background" width={200} height={100} />
 
-          <Image src={logo1} alt="Hero background" width={200} height={100} />
+          <Image src={logo2} alt="Hero background" width={200} height={100} />
 
-          <Image src={logo1} alt="Hero background" width={200} height={100} />
+          <Image src={logo3} alt="Hero background" width={200} height={100} />
 
-          <Image src={logo1} alt="Hero background" width={200} height={100} />
+          <Image src={logo4} alt="Hero background" width={200} height={100} />
 
-          <Image src={logo1} alt="Hero background" width={200} height={100} />
+          <Image src={logo5} alt="Hero background" width={200} height={100} />
         </div>
       </div>
 
@@ -69,7 +74,7 @@ export default function Home() {
           We Offer Best Services
         </h1>
         <div className="grid md:grid-cols-2 grid-cols-1 lg:grid-cols-4 gap-11 text-center">
-          <div className="shadow rounded-[30px] p-8">
+          <Link href={'/royalExotic'}><div className="shadow rounded-[30px] p-8">
             <div className="flex justify-center  h-[150px]">
               {" "}
               <Image
@@ -86,8 +91,8 @@ export default function Home() {
               Unleash the power, luxury, and elegance of our handpicked fleet of
               exotic cars.
             </p>
-          </div>
-         <div className="shadow rounded-[30px] p-8">
+          </div></Link>
+        <Link href={'/royalExotic'}> <div className="shadow rounded-[30px] p-8">
             <div className="flex justify-center  h-[150px] ">
               {" "}
               <Image
@@ -104,8 +109,8 @@ export default function Home() {
               Unleash the power, luxury, and elegance of our handpicked fleet of
               exotic cars.
             </p>
-          </div>
-          <div className="shadow rounded-[30px] p-8">
+          </div></Link>
+          <Link href={'/royalExotic'}><div className="shadow rounded-[30px] p-8">
             <div className="flex justify-center  h-[150px]">
               {" "}
               <Image
@@ -122,8 +127,8 @@ export default function Home() {
               Unleash the power, luxury, and elegance of our handpicked fleet of
               exotic cars.
             </p>
-          </div>
-           <div className="shadow rounded-[30px] p-8">
+          </div></Link>
+          <Link href={'/royalExotic'}> <div className="shadow rounded-[30px] p-8">
             <div className="flex justify-center  h-[150px]">
               {" "}
               <Image
@@ -140,7 +145,7 @@ export default function Home() {
               Unleash the power, luxury, and elegance of our handpicked fleet of
               exotic cars.
             </p>
-          </div>
+          </div></Link>
         </div>
       </div>
       <PrivateJetsPage></PrivateJetsPage>

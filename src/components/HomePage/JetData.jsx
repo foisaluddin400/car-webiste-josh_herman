@@ -1,9 +1,9 @@
 "use client";
 import Image from "next/image";
-import img1 from "../../../public/img/exo.jpg";
+import img1 from "../../../public/img/pri.jpg";
 import Link from "next/link";
 
-export default function DataCardPage() {
+export default function JetData() {
   const properties = [
     { title: "Luxury Beach House", priceRange: "$1800 - $2500" },
     { title: "Modern City Apartment", priceRange: "$1200 - $1700" },
