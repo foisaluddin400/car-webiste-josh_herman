@@ -1,5 +1,7 @@
 import React from "react";
 import { Facebook, Twitter, Instagram, Linkedin } from "lucide-react";
+import Link from "next/link";
+import Image from "next/image";
 
 // Button Component
 const Button = ({ children, className, ...props }) => (
@@ -20,24 +22,23 @@ const Input = ({ className, ...props }) => (
 );
 export const Footer = () => {
   return (
- <footer className="bg-[#0F1010] text-white py-12 mt-20">
+    <footer className="bg-[#0F1010] text-white py-12 mt-20">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
           {/* Exclusive Section */}
           <div className="lg:col-span-1">
+            <Image
+              alt="logo"
+              src="/img/logo4.png"
+              height={40}
+              width={500}
+              priority
+              className="w-[50px]"
+            />
             <h3 className="text-xl font-semibold mb-4">Exclusive</h3>
             <h4 className="text-lg font-medium mb-3">Subscribe</h4>
             <p className="text-gray-300 mb-4">Get 10% off your first order</p>
-            <div className="flex">
-              <Input
-                type="email"
-                placeholder="Enter your email"
-                className="bg-transparent border-gray-600 text-white placeholder:text-gray-400 rounded-r-none"
-              />
-              <Button className="bg-transparent border border-gray-600 border-l-0 rounded-l-none hover:bg-gray-700">
-                →
-              </Button>
-            </div>
+
           </div>
 
           {/* Support Section */}
@@ -47,7 +48,7 @@ export const Footer = () => {
               <p>111 Mohakhali, Dhaka,</p>
               <p>DH 1515, Bangladesh.</p>
               <p>bdcalling@gmail.com</p>
-              <p>+88015-88888-9999</p>
+              <p>+88015-88888-999</p>
             </div>
           </div>
 
@@ -55,31 +56,32 @@ export const Footer = () => {
           <div className="lg:col-span-1">
             <h3 className="text-xl font-semibold mb-4">Account</h3>
             <div className="space-y-2">
-              <a href="/profilePage" className="block text-gray-300 hover:text-white transition-colors">
+              <a href="/profile" className="block text-gray-300 hover:text-white transition-colors">
                 My Account
               </a>
-              <a href="/auth/login" className="block text-gray-300 hover:text-white transition-colors">
+              <a href="/signIn" className="block text-gray-300 hover:text-white transition-colors">
                 Login / Register
               </a>
-              <a href="/cart" className="block text-gray-300 hover:text-white transition-colors">
-                Cart
-              </a>
+
             </div>
           </div>
 
-          {/* Quick Link Section */}
+          {/* Quick Linkd Section */}
           <div className="lg:col-span-1">
             <h3 className="text-xl font-semibold mb-4">Quick Link</h3>
             <div className="space-y-2">
-              <a href="/privecyPolicy" className="block text-gray-300 hover:text-white transition-colors">
+              <Link href="/aboutUs" className="block text-gray-300 hover:text-white transition-colors">
+                About Us
+              </Link>
+              <Link href="/privecyPolicy" className="block text-gray-300 hover:text-white transition-colors">
                 Privacy Policy
-              </a>
-              <a href="/termsAndCondition" className="block text-gray-300 hover:text-white transition-colors">
+              </Link>
+              <Link href="/termsAndCondition" className="block text-gray-300 hover:text-white transition-colors">
                 Terms of Service
-              </a>
-              <a href="/faq" className="block text-gray-300 hover:text-white transition-colors">
+              </Link>
+              <Link href="/faq" className="block text-gray-300 hover:text-white transition-colors">
                 FAQ
-              </a>
+              </Link>
             </div>
           </div>
 

@@ -1,9 +1,9 @@
 "use client";
 import Image from "next/image";
-import img1 from "../../../public/img/exo.png";
+import img1 from "../../../public/img/yac.png";
 import Link from "next/link";
 
-export default function DataCardPage() {
+export default function RoyelYecData() {
   const properties = [
     { title: "Luxury Beach House", priceRange: "$1800 - $2500" },
     { title: "Modern City Apartment", priceRange: "$1200 - $1700" },
@@ -42,3 +42,4 @@ export default function DataCardPage() {
     </div>
   );
 }
+//ff

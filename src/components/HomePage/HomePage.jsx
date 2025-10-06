@@ -3,6 +3,7 @@ import { MapPin, Users, Star } from "lucide-react"
 import jek1 from '../../../public/img/jek1.png'
 import jek2 from '../../../public/img/jek2.png'
 import jek3 from '../../../public/img/jek3.png'
+import Link from "next/link"
 
 const jetPackages = [
   {
@@ -125,9 +126,9 @@ export default function PrivateJetsPage() {
                 </p>
 
                 {/* CTA Button */}
-                <button className="w-full  bg-gradient-to-r from-amber-500 to-red-500 hover:from-amber-600 hover:to-red-600 text-white font-semibold px-8 py-3 rounded-lg shadow-lg transition-all duration-200 hover:shadow-xl">
+                <Link href={'/royelExoticDetails'}><button className="w-full  bg-gradient-to-r from-amber-500 to-red-500 hover:from-amber-600 hover:to-red-600 text-white font-semibold px-8 py-3 rounded-lg shadow-lg transition-all duration-200 hover:shadow-xl">
                   Explore Now
-                </button>
+                </button></Link>
               </div>
             </div>
           ))}

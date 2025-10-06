@@ -229,7 +229,7 @@ export const Navbar = () => {
               </div>
               <div className="hidden lg:block">
                 <div className="flex gap-3">
-                  <Link href="/cart">
+                  <Link href="/booking">
                     <button className="bg-primary text-black px-3 rounded py-1">Join PRM</button>
                   </Link>
                   <Link href="/profile">
