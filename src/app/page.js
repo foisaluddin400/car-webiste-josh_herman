@@ -1,5 +1,5 @@
 import Image from "next/image";
-import back from "/public/img/hero1.jpg";
+import back from "/public/img/hero2.jpg";
 import logo1 from "/public/img/l1.png";
 import car1 from "/public/img/car1.png";
 import plan1 from "/public/img/plan1.png";
@@ -24,7 +24,7 @@ export default function Home() {
         />
 
         {/* Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-r from-black via-black to-black opacity-50"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-black via-black to-black opacity-20"></div>
 
         {/* Content */}
         <div className="relative z-10 container mx-auto h-full px-4 lg:px-0 flex flex-col justify-center">
