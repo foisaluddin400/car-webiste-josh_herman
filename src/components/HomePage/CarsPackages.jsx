@@ -5,6 +5,7 @@ import { Users } from "lucide-react";
 import b1 from "../../../public/img/b1.jpg";
 import b2 from "../../../public/img/b2.jpg";
 import b3 from "../../../public/img/b3.jpg";
+import b4 from "../../../public/img/b4.jpg";
 import Link from "next/link";
 
 const cars = [
@@ -20,7 +21,7 @@ const cars = [
     name: "Exotic Cars",
     price: 840,
     capacity: 10,
-    image: b2,
+    image: b4,
   },
   {
     id: 3,
@@ -34,7 +35,14 @@ const cars = [
     name: "Exotic Cars",
     price: 840,
     capacity: 10,
-    image: b2,
+    image: b4,
+  },
+   {
+    id: 4,
+    name: "Exotic Cars",
+    price: 840,
+    capacity: 10,
+    image: b1,
   },
    {
     id: 4,
@@ -48,21 +56,14 @@ const cars = [
     name: "Exotic Cars",
     price: 840,
     capacity: 10,
-    image: b2,
+    image: b4,
   },
    {
     id: 4,
     name: "Exotic Cars",
     price: 840,
     capacity: 10,
-    image: b2,
-  },
-   {
-    id: 4,
-    name: "Exotic Cars",
-    price: 840,
-    capacity: 10,
-    image: b2,
+    image: b1,
   },
    {
     id: 4,

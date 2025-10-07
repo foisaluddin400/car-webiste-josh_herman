@@ -1,5 +1,5 @@
 import Image from "next/image";
-import back from "/public/img/hero2.jpg";
+import back from "/public/img/hero3.png";
 import logo1 from "/public/img/l1.png";
 import logo2 from "/public/img/air.png";
 import logo3 from "/public/img/urk.png";

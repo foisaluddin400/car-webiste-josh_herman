@@ -35,7 +35,7 @@ export const Navbar = () => {
     { label: "Royal Exotic", path: "/royalExotic" },
     { label: "ROYAL Yachts", path: "/rOYALYachts"},
     { label: "ROYAL Mansions", path: "/rOYALMansions" },
-     { label: "ROYAL Jet plane ", path: "/rOYALJetplane " },
+     { label: "ROYAL Jet plane ", path: "/rOYALJetplane" },
     { label: "Contact", path: "/contact" },
     // { label: "Blog", path: "/blog" },
   ];
