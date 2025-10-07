@@ -27,14 +27,16 @@ export const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
           {/* Exclusive Section */}
           <div className="lg:col-span-1">
-            <Image
+         <div className="flex pb-4">
+             <Image
               alt="logo"
               src="/img/logo4.png"
-              height={40}
-              width={500}
+              height={200}
+              width={1000}
               priority
               className="w-[50px]"
             />
+         </div>
             <h3 className="text-xl font-semibold mb-4">Exclusive</h3>
             <h4 className="text-lg font-medium mb-3">Subscribe</h4>
             <p className="text-gray-300 mb-4">Get 10% off your first order</p>
@@ -92,40 +94,9 @@ export const Footer = () => {
 
             <div className="flex gap-3 mb-4">
               {/* QR Code placeholder */}
-              <div className="w-20 h-20 bg-white rounded flex items-center justify-center">
-                <div className="w-16 h-16 bg-black rounded grid grid-cols-4 gap-px p-1">
-                  {Array.from({ length: 16 }).map((_, i) => (
-                    <div
-                      key={i}
-                      className={`${Math.random() > 0.5 ? "bg-white" : "bg-black"} rounded-sm`}
-                    />
-                  ))}
-                </div>
-              </div>
+             
 
-              <div className="flex flex-col gap-2">
-                {/* Google Play Store */}
-                <div className="bg-black rounded px-3 py-1 flex items-center gap-2 text-xs">
-                  <div className="w-6 h-6 bg-white rounded flex items-center justify-center">
-                    <span className="text-black font-bold text-xs">▶</span>
-                  </div>
-                  <div>
-                    <div className="text-gray-300">GET IT ON</div>
-                    <div className="font-semibold">Google Play</div>
-                  </div>
-                </div>
-
-                {/* App Store */}
-                <div className="bg-black rounded px-3 py-1 flex items-center gap-2 text-xs">
-                  <div className="w-6 h-6 bg-white rounded flex items-center justify-center">
-                    <span className="text-black font-bold text-xs">🍎</span>
-                  </div>
-                  <div>
-                    <div className="text-gray-300">Download on the</div>
-                    <div className="font-semibold">App Store</div>
-                  </div>
-                </div>
-              </div>
+             
             </div>
 
             {/* Social Media Icons */}
